@@ -12,6 +12,11 @@
     z-index: 100;
     
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 .nav-logo p{
     color: black;
     font-size: 25px;

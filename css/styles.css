@@ -2869,6 +2869,11 @@ td:last-child {
 .social-list a:hover svg path {
 	fill: var(--color-3);
 }
+.social-list a:hover{
+	transform: scale(1.5, 1.5);
+	
+	/* transform: translate(5px, -10px); */
+}
 
 .social-list svg {
 	height: var(--vspace-1);
@@ -3197,12 +3202,14 @@ td:last-child {
 		             0 8px 8px rgba(0, 0, 0, 0.03),
 		              16px 16px rgba(0, 0, 0, 0.03);
 	z-index         : 100;
-	background-color: transparent;
+	background-color: #201f1f;
+	margin: 0;
 	height          : var(--header-height);
 	width           : 100%;
-	position        : absolute;
-	top             : var(--vspace-0_75);
+	position        : fixed;
+	/* top             : var(--vspace-0_75); */
 	left            : 0;
+	
 }
 
 .s-header__inner {
@@ -3373,8 +3380,10 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
 	.s-header {
+		margin: 0;
 		--logo-width: 10rem;
-		top         : var(--vspace-0_25);
+		/* background-color: rgba(32, 4, 4, 0.05); */
+		/* top         : var(--vspace-0_25); */
 	}
 
 	.s-header__inner {
@@ -3951,8 +3960,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-	padding-top     : var(--vspace-6);
-	padding-bottom  : var(--vspace-6);
+	padding-top     : var(--vspace-3);
+	padding-bottom  : var(--vspace-3);
 	background-color: var(--color-2-dark);
 	color           : var(--color-3);
 }
@@ -3977,7 +3986,7 @@ td:last-child {
 
 .s-about__content-main .attention-getter,
 .s-about__content-main .lead {
-	font-weight: 300;
+	font-weight: 250;
 }
 
 .s-about__content-btn {
