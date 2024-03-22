@@ -2854,6 +2854,7 @@ td:last-child {
 .social-list li {
 	padding-left: 0;
 	margin-right: 1.2rem;
+	height: 20px;
 }
 
 .social-list li:last-child {
